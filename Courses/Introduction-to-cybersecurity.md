@@ -36,31 +36,33 @@ By completing this course I aimed to:
 
 ## 📝 Course Modules & Key Notes
 
-### Module 1 — Threats & Methods of Infiltration
-- **Topics covered:** Social engineering, phishing, malware delivery vectors, exploitation of unpatched software, weak credentials.
+### Module 1: Introduction to Cybersecurity
+- **Topics covered:** Basics of cybersecurity, online & offline data protection, organizational data types, attackers' identities
+- **Key takeaways:**
+  - Hackers motive for attacks
+  - Online & offline identity safety measures
+    
+### Module 2 — Attacks, Concepts and Techniques
+- **Topics covered:** Social engineering, phishing, malware delivery vectors, exploitation of unpatched software, weak credentials, buffer overflows, injection flaws, misconfigurations, outdated firmware, supply-chain risks, cryptocurrency basics, wallets, how cryptojacking works (unauthorized cryptomining), indicators of compromise.
 - **Key takeaways:**
   - Many breaches begin with human-targeted attacks (phishing, credential theft).
   - Patch management and least-privilege reduce attack surface.
-
-### Module 2 — Software & Hardware Vulnerabilities
-- **Topics covered:** Buffer overflows, injection flaws, misconfigurations, outdated firmware, supply-chain risks.
+    
 - **Categories of software vulnerabilities:**
   - Input validation (injection)
   - Authentication & authorization flaws
   - Security misconfigurations
   - Broken access control
   - Memory safety issues
+
 - **Hardware vulnerability notes:** firmware attacks, insecure default configurations, physical tampering risks.
 
-### Module 3 — Cryptocurrency & Cryptojacking
-- **Topics covered:** Cryptocurrency basics, wallets, how cryptojacking works (unauthorized cryptomining), indicators of compromise.
-- **Mitigations:** Monitor CPU/GPU utilization anomalies, block mining domains, use endpoint protection, keep software up to date.
+- **Cryptojacking Mitigations:** Monitor CPU/GPU utilization anomalies, block mining domains, use endpoint protection, keep software up to date.
 
-### Module 4 — Transaction Modes & Security Considerations
-- **Topics covered:** Centralized vs decentralized transaction models, secure handling of keys, transaction integrity.
 - **Notes:** Private key security is paramount; protect keys with hardware wallets or well-managed key storage.
 
-### Module 5 — Securing Computing Devices
+### Module 3 - Protecting your Data and Privacy
+#### Submodule 1 - Protecting your Devices and Network
 - **Techniques covered:**
   - Apply OS updates and firmware patches
   - Disable unused services and ports
@@ -68,11 +70,11 @@ By completing this course I aimed to:
   - Install reputable endpoint protection and enable firewalls
   - Enable disk/file encryption for sensitive data
 
-### Module 6 — Risks of Public Wi-Fi
+#### Submodule 2 - Risks of Public Wi-Fi
 - **Risks:** Eavesdropping, man-in-the-middle attacks, rogue APs.
 - **Mitigations:** Use VPNs for confidentiality, prefer HTTPS/TLS, disable automatic network sharing, verify AP authenticity.
 
-### Module 7 — Strong Passwords & Passphrases
+#### Submodule 3 - Strong Passwords & Passphrases
 - **Rules covered:**
   - Use long passphrases over short complex passwords
   - Prefer unique credentials per service
@@ -80,21 +82,21 @@ By completing this course I aimed to:
   - Enable MFA where available
 - **Passphrase tip:** Use memorable but long phrases (three+ unrelated words, optionally with separators) — easier to remember, harder to brute force.
 
-### Module 8 — Cryptography & Encryption Fundamentals
+#### Submodule 4 - Cryptography & Encryption Fundamentals
 - **Topics:** Symmetric vs asymmetric encryption, hashing, digital signatures, key management basics.
 - **Practical:** Understand when to use encryption in transit (TLS) and at rest (disk/file encryption).
 
-### Module 9 — Encrypting Files with EFS (Windows)
+#### Submodule 5 - Encrypting Files with EFS (Windows)
 - **Concept:** EFS (Encrypting File System) enables per-file encryption using NTFS.
 - **GUI Steps (user-level):**
   1. Right-click the file or folder → **Properties**.
   2. Click **Advanced...**.
-  3. Check **Encrypt contents to secure data**, then **OK** → **Apply**.
+  3. Check **Encrypt contents to secure data**, then **OK** -> **Apply**.
   4. Windows will use your user certificate to encrypt the file.
 - **Important:** Back up your EFS certificate/recovery key — losing the key means losing access to the encrypted data.
 - **Certificate backup (high-level):** Use the Certificates MMC (`certmgr.msc`) or Windows backup tools to export the personal certificate with its private key to a secure PFX file and store it offsite/encrypted.
 
-### Module 10 — Backup Methods
+#### Submodule 6 - Backup Methods
 - **Methods discussed:**
   - Local backups (external drives)
   - Offsite backups (cloud or remote storage)
@@ -103,22 +105,25 @@ By completing this course I aimed to:
   - Encrypted backups and secure retention policies
 - **Best practices:** Use encryption, verify backups regularly, maintain version retention, test restores.
 
-### Module 11 — Permanent Data Deletion
+#### Submodule 7 - Permanent Data Deletion 
 - **Logical methods:** Secure overwrite tools that overwrite free space or files multiple times (wiping), use OS utilities to zero out free space.
-- **Tools (examples):** Built-in utilities (e.g., `cipher /w` on Windows), reputable utilities (e.g., Sysinternals SDelete).
+- **Tools (examples):** Built-in utilities (e.g., `cipher /w` on Windows)
 - **Physical techniques:** Physical destruction, shredding, degaussing (for magnetic media), incineration (properly done).
-- **Caveat:** For high-assurance scenarios, follow organizational policy and standards for sanitization; physical destruction is most reliable for media disposal.
 
-### Module 12 — Security Appliances & Firewall Types
+#### Submodule 8 - Security Appliances & Firewall Types
 - **Appliances covered:** Firewalls, IDS, IPS, proxies, load balancers with WAF functionality, SIEM systems.
 - **Firewall types:**
-  - Packet-filtering (stateless)
-  - Stateful inspection
+  - Application layer
+  - Network layer
+  - Transport layer
+  - Context aware layer
+  - Reverse Proxy Server
+  - Network address translation firewall
+  - Host-based firewall
   - Proxy firewalls
-  - Next-generation firewalls (NGFW) with application awareness
 - **Placement/role:** Edge perimeter protection, segmentation between trust zones, host-based firewalling on endpoints.
 
-### Module 13 — Port Scanning & IDS/IPS Overview
+#### Submodule 9 - Port Scanning & IDS/IPS Overview
 - **Port scanning:** Used to discover open services/ports; common tools include `nmap` (basic scans: service discovery, version detection).
   - Example high-level usage: `nmap <target>` to discover open ports.
 - **IDS/IPS:**
@@ -132,9 +137,9 @@ By completing this course I aimed to:
 (Include links to your lab writeups in `Labs/` folder.)
 
 - **EFS encryption lab**
-  - Encrypted test files via Windows EFS (documented GUI steps and notes about certificate backup).
+  - Encrypted test files via Windows EFS (documented GUI steps and notes about certificate backup) View the lab here.
 - **Port scanning lab**
-  - Performed non-invasive port discovery on lab targets to identify open services; documented findings and defensive recommendations.
+  - Performed non-invasive port discovery on lab targets to identify open services; documented findings and defensive recommendations. View the lab here.
 
 
 > Note: All active scans and tests were performed only on lab & authorized targets or isolated VMs.
@@ -156,7 +161,7 @@ By completing this course I aimed to:
 
 ## ✅ Completion Summary
 - **Status:** Completed  
-- **Completion date:** 2025-10-13  
+- **Completion date:** 2025-10-10  
 - **Next steps I plan to take:**
   - Apply course knowledge in hands-on CTF labs (TryHackMe, OverTheWire).
   - Study cloud security fundamentals (AWS/Azure) and map course concepts to cloud-specific controls (e.g., IAM, KMS).
