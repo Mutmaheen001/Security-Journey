@@ -11,4 +11,4 @@ Currently learning and documenting my journey through:
 
 💡 My goal: To build strong expertise in securing cloud infrastructures and protecting systems against modern threats.  
 
-📂 Explore my [Security Journey](./Security-Journey) repo for structured notes, labs, and projects.
+📂 Explore my [Security Journey](Courses/Introduction-to-cybersecurity.md) repo for structured notes, labs, and projects.
