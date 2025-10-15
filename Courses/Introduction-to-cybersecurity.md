@@ -153,9 +153,7 @@ By completing this course I aimed to:
 ---
 
 ## 📜 Certificate
-*(Attach a screenshot or PDF of your course completion certificate in the folder, and link it here.)*  
-`![Certificate](images/netacad_certificate.png)`
-- [Certificate](
+- [Certificate](https://www.credly.com/badges/fce7d027-34c9-4174-ae63-27cdaa375396/public_url)
 ---
 
 ## ✅ Completion Summary
