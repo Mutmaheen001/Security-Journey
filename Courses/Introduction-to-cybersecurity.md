@@ -134,10 +134,9 @@ By completing this course I aimed to:
 ---
 
 ## 💡 Hands-On Practice & Labs Completed
-(Include links to your lab writeups in `Labs/` folder.)
 
 - **EFS encryption lab**
-  - Encrypted test files via Windows EFS (documented GUI steps and notes about certificate backup) View the lab here.
+  - Encrypted test folder & files via Windows EFS (documented GUI steps and notes about certificate backup) view the lab [here](Labs/Windows EFS.md).
 - **Port scanning lab**
   - Performed non-invasive port discovery on lab targets to identify open services; documented findings and defensive recommendations. View the lab here.
 
