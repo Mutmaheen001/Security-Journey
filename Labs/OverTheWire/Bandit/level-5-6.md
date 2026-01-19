@@ -44,4 +44,4 @@ Locate and inspect a file that meets a specific set of properties — human-read
 
 ---
 
-**Next:** [Bandit Level 6 → 7](../Bandit-Level6-7/README.md)
+**Next:** [Bandit Level 6 → 7](level-6-7.md)
