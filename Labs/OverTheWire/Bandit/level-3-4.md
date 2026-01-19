@@ -42,5 +42,5 @@ Connect to the Bandit Level 3 environment and locate a hidden file within the di
 
 ---
 
-**Next:** [Bandit Level 4 → 5](../Bandit-Level4-5/README.md)
+**Next:** [Bandit Level 4 → 5](level-4-5.md)
 
