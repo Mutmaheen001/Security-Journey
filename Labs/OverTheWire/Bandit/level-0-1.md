@@ -45,5 +45,5 @@ To establish a secure remote connection to a Linux-based system via SSH and iden
 
 ---
 
-**Next:** [Bandit Level 1 → 2]  
+**Next:** [Bandit Level 1 → 2](level-1-2.md)  
 
