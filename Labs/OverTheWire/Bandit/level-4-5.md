@@ -43,4 +43,4 @@ Identify the only human-readable file within a directory containing multiple fil
 
 ---
 
-**Next:** [Bandit Level 5 → 6](../Bandit-Level5-6/README.md)
+**Next:** [Bandit Level 5 → 6](level-5-6.md)
