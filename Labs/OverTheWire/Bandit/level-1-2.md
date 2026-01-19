@@ -41,5 +41,5 @@ Access the Bandit Level 1 system via SSH and extract the next-level credential s
 - Screenshot confirming SSH login and command execution.  
 ---
 
-**Next:** [Bandit Level 2 → 3]
+**Next:** [Bandit Level 3 → 4]
 
