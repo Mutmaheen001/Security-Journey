@@ -21,7 +21,7 @@ Access the Bandit Level 1 system via SSH and extract the next-level credential s
 
 ---
 
-## 🧩 Approach Summary (Hint-Style)  
+## 🧩 Approach Summary   
 1. Initiated an SSH session using the Level 1 credentials.  
 2. Listed directory contents to locate files relevant to the challenge.  
 3. Identified that one file had a name requiring special handling.  
@@ -29,7 +29,7 @@ Access the Bandit Level 1 system via SSH and extract the next-level credential s
 
 ---
 
-## 💡 Takeaways & Skills Strengthened  
+## 💡 Skills Strengthened  
 - Improved proficiency working with files that include special characters or symbols.  
 - Reinforced understanding of UNIX command-line safety and precision.  
 - Strengthened SSH workflow confidence and environment awareness.  
